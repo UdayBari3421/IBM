@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG | Life Below Water</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body class="bg-slate-900 text-white">
+    <div>
+        <nav
+            class="rounded-b-xl ring-2 ring-neutral-600 before:bg-black before:w-full backdrop-blur-xl before:content-none sticky top-0 left-10 right-10 flex items-center justify-between px-4 py-3 z-50">
+            <div class="flex justify-center items-center gap-2">
+                <img src="./images/Logo3.png" width="150">
+            </div>
+            <ul class="flex items-center justify-center gap-5">
+                <li class="hover:opacity-100 opacity-60 hover:underline underline-offset-4"><a href="#Home">Home</a>
+                </li>
+                <li class="hover:opacity-100 opacity-60 hover:underline underline-offset-4"><a
+                        href="#Gallary">Gallary</a>
+                </li>
+                <li class="hover:opacity-100 opacity-60 hover:underline underline-offset-4"><a
+                        href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="Home" class="h-screen relative top-[-35px] right-0 left-0 bottom-[35px] w-full">
+            <div class="w-full ">
+                <video src="./assets/hero.mp4" class="w-full" autoplay loop muted></video>
+            </div>
+            <div
+                class="bg-black bg-opacity-70 flex items-center justify-center min-h-full h-[120vh] lg:h-[105vh] absolute top-0 right-0 left-0">
+                <div class="text-center">
+                    <h1
+                        class="absolute mx-auto py-4 flex border w-fit bg-gradient-to-r blur-xl from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-6xl box-content font-extrabold text-transparent text-center select-none">
+                        LIFE BELOW WATER NOWDAYS</h1>
+                    <h1
+                        class="relative top-0 w-fit h-auto py-4 justify-center flex bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
+                        LIFE BELOW WATER NOWDAYS</h1>
+                    <div class="flex justify-center items-center gap-5 flex-col">
+                        <p class="text-xl">Our Oceans, Our Responsibility End Marine Pollution</p>
+                        <a href="https://www.globalgoals.org/goals/14-life-below-water/" target="_blank"
+                            class="border-cyan-400 border-2 hover:text-black hover:bg-cyan-500 cursor-pointer py-2 px-3 rounded-lg">Learn
+                            More...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="relative bg-[url(./images/back.jpg)] bg-no-repeat bg-cover bg-center flex flex-col p-12 gap-12 text-center justify-center items-center">
+            <h1 class="text-4xl hover:underline underline-offset-8 content-center">Why Does the Ocean Matter? </h1>
+            <div class="flex w-full lg:gap-28 gap-6 lg:flex-nowrap flex-wrap">
+                <div class="lg:w-6/12 w-full flex justify-center items-center">
+                    <p class="mx-auto text-2xl text-center">According to the World Wildlife Fund, the
+                        ocean is
+                        currently
+                        valued at
+                        $24
+                        trillion
+                        dollars.The goods and services from marine environments add up to an additional $2.5 trillion.
+                        This
+                        means the ocean would have the seventh-largest GDP in the world. However, the value of the ocean
+                        relies on its current output, which in turn depends on its conditions. Climate change, ocean
+                        acidification, habitat destruction, pollution and overfishing are endangering the ocean and
+                        threatening its value and the security and livelihood of the three billion people who depend on
+                        it.
+                    </p>
+                </div>
+                <div class="lg:w-6/12 w-full">
+                    <img class="max-w-[48rem] rounded-2xl w-full object-cover" src="./images/info.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="Gallary" class="p-16 flex flex-col justify-center items-center">
+            <h1 class="text-4xl hover:underline underline-offset-8 content-center">Gallary</h1>
+            <div class="full-img" id="fullImgBox">
+                <img src="./images/images.jpg" alt="img1" id="fullImg">
+                <span onclick="closeFullImg()">&times;</span>
+            </div>
+            <div class="img-gallary">
+                <img src="./images/g1.jpeg" alt="img1" onclick="openFullImg(this.src)">
+                <img src="./images/g3.jpg" alt="img4" onclick="openFullImg(this.src)">
+                <img src="./images/g2.jpeg" alt="img2" onclick="openFullImg(this.src)">
+                <img src="./images/g5.jpeg" alt="img6" onclick="openFullImg(this.src)">
+                <img src="./images/g4 .jpg" alt="img5" onclick="openFullImg(this.src)">
+                <img src="./images/g6.jpg" alt="img7" onclick="openFullImg(this.src)">
+            </div>
+        </section>
+
+        <section id="Articles" class="flex flex-col justify-center items-center">
+            <h1 class="text-4xl hover:underline underline-offset-8 content-center">Articles</h1>
+
+            <div class="container">
+                <div class="full-img" id="artBox">
+                    <div class="details-content">
+                        <img id="artImg">
+                        <div class="artDiv" id="artName"></div>
+                        <div class="artDiv" id="artDesc"></div>
+                        <span onclick="closeArticle()">
+                            &times;
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-container mb-0 p-16">
+                    <div class="button-area" style="display: inline-block; margin-left: 850px;">
+                        <div class="swiper-button-next text-white rounded-circle"></div>
+                        <div class="swiper-button-prev text-white rounded-circle"></div>
+                    </div>
+
+                    <div class="swiper-wrapper py-20 w-full ">
+                        <div class="swiper-slide">
+                            <div
+                                class="hover:bg-cyan-600 hover:text-black max-w-fit rounded-2xl h-[550px] border-2 border-cyan-400  mx-auto overflow-hidden shadow-lg">
+                                <div>
+                                    <img class="w-full" src="./images/art1.jpg" alt="Sunset in the mountains">
+                                </div>
+                                <div class="px-6 py-4 flex flex-col">
+                                    <div class="font-bold text-xl mb-2">Preventing and Reducing Marine Pollution</div>
+                                    <p class="overflow-hidden text-ellipsis text-nowrap text-base">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia,
+                                        nulla! Maiores et perferendis
+                                        eaque, exercitationem praesentium nihil.
+                                    </p>
+                                </div>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 border-2 border-cyan-400 rounded-lg hover:bg-cyan-400"
+                                        id="art-1" onclick="onDetailClick(this.id)">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="hover:bg-cyan-600 hover:text-black max-w-fit rounded-2xl h-[550px] border-2 border-cyan-400  mx-auto overflow-hidden shadow-lg">
+                                <div>
+                                    <img class="w-full" src="./images/art2.jpg" alt="Sunset in the mountains">
+                                </div>
+                                <div class="px-6 py-4 flex flex-col">
+                                    <div class="font-bold text-xl mb-2">Addressing Ocean Acidification</div>
+                                    <p class="overflow-hidden text-ellipsis text-nowrap text-base">
+                                        Ocean acidification is a significant environmental issue caused
+                                        by the increasing absorption of carbon dioxide (CO₂) by the world's oceans. This
+                                        process lowers the pH of seawater, making it more acidic, which can have
+                                        devastating effects on marine life, ecosystems, and human communities that
+                                        depend on them.
+                                    </p>
+                                </div>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 border-2 border-cyan-400 rounded-lg hover:bg-cyan-400"
+                                        id="art-1" onclick="onDetailClick(this.id)">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="hover:bg-cyan-600 hover:text-black max-w-fit rounded-2xl h-[550px] border-2 border-cyan-400  mx-auto overflow-hidden shadow-lg">
+                                <div>
+                                    <img class="w-full" src="./images/art3.jpg" alt="Sunset in the mountains">
+                                </div>
+                                <div class="px-6 py-4 flex flex-col">
+                                    <div class="font-bold text-xl mb-2">Conserving and Sustainably Using Marine
+                                        Resources</div>
+                                    <p class="overflow-hidden text-ellipsis text-nowrap text-base">
+                                        Conserving and sustainably using marine resources is a key component of
+                                        Sustainable Development Goal 14 (SDG 14), "Life Below Water." This goal
+                                        emphasizes the need to protect the oceans, seas, and marine resources from
+                                        pollution, overfishing, and other harmful practices.
+                                    </p>
+                                </div>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 border-2 border-cyan-400 rounded-lg hover:bg-cyan-400"
+                                        id="art-1" onclick="onDetailClick(this.id)">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide shadow-bst">
+                            <div
+                                class="hover:bg-cyan-600 hover:text-black max-w-fit rounded-2xl h-[550px] border-2 border-cyan-400  mx-auto overflow-hidden shadow-lg">
+                                <div>
+                                    <img class="w-full" src="./images/art4.jpg" alt="Sunset in the mountains">
+                                </div>
+                                <div class="px-6 py-4 flex flex-col">
+                                    <div class="font-bold text-xl mb-2">Regulating Fisheries and Ending Overfishing
+                                    </div>
+                                    <p class="overflow-hidden text-ellipsis text-nowrap text-base">
+                                        Regulating
+                                        fisheries and ending overfishing are
+                                        critical
+                                        components of ensuring the long-term sustainability of marine resources.
+                                        Overfishing not only depletes fish stocks but also disrupts entire marine
+                                        ecosystems, leading to negative consequences for biodiversity,
+                                    </p>
+                                </div>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 border-2 border-cyan-400 rounded-lg hover:bg-cyan-400"
+                                        id="art-1" onclick="onDetailClick(this.id)">Details</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="hover:bg-cyan-600 hover:text-black max-w-fit rounded-2xl h-[550px] border-2 border-cyan-400  mx-auto overflow-hidden shadow-lg">
+                                <div>
+                                    <img class="w-full" src="./images/art5.jpg" alt="Sunset in the mountains">
+                                </div>
+                                <div class="px-6 py-4 flex flex-col">
+                                    <div class="font-bold text-xl mb-2">Protecting and Managing Marine and Coastal
+                                        Ecosystems
+                                    </div>
+                                    <p class="overflow-hidden text-ellipsis text-nowrap text-base">
+                                        Protecting and
+                                        managing marine and coastal
+                                        ecosystems is
+                                        essential for maintaining the health of the oceans and the well-being of
+                                        communities that depend on these environments. Marine and coastal ecosystems,
+                                        including coral reefs, mangroves, seagrass beds, and estuaries, provide critical
+                                        services such as food, coastal protection, carbon sequestration, and
+                                        biodiversity support.
+                                    </p>
+                                </div>
+                                <div class="text-center">
+                                    <button class="px-5 py-2 border-2 border-cyan-400 rounded-lg hover:bg-cyan-400"
+                                        id="art-1" onclick="onDetailClick(this.id)">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <Section id="Contact" class="p-12 gap-14 flex flex-col justify-center items-center">
+            <h1 class="text-4xl hover:underline underline-offset-8 content-center">Contact</h1>
+
+            <div class="flex lg:w-full lg:mx-auto gap-16 lg:flex-nowrap flex-wrap ">
+                <div
+                    class="shadow-bst w-full lg:w-6/12 min-h-max h-[500px] items-center justify-center flex border-blue-400 border-2 overflow-auto rounded-xl">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29801.650390527553!2d75.5626035!3d20.984365999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1722006936321!5m2!1sen!2sin"
+                        height="450" class="w-full" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div
+                    class="shadow-bst w-full lg:w-6/12 min-h-max h-[500px] flex border-2 border-blue-400 p-10 rounded-xl">
+                    <form id="form" class="w-full flex flex-col justify-between">
+                        <div class="flex gap-2 flex-col">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="flex gap-2 flex-col">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="flex gap-2 flex-col">
+                            <label for="desc">Description:</label>
+                            <textarea name="desc" id="desc"></textarea>
+                        </div>
+                        <div class="flex gap-2 flex-col">
+                            <button class="hover:text-white hover:bg-blue-400 border-2 border-blue-400 p-3 rounded-md"
+                                type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </Section>
+
+        <footer class="bg-black px-2 py-4 text-center">
+            <h1>&copy; 2021 SDG | Life Below Water. All Rights Reserved.
+            </h1>
+        </footer>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

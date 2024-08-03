@@ -1,0 +1,122 @@
+/* Articles Start */
+
+#articles h2 {
+  color: white;
+  margin-inline: auto;
+  border-bottom: 4px solid #6259ba;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+#articles .container .card img {
+  width: 100%;
+}
+
+#articles .container .card {
+  padding: 2px 0 2px 0;
+  border-radius: 5px;
+  height: 400px;
+}
+
+#articles .container .card:hover {
+  box-shadow: 0px 5px 10px 5px #262222;
+  transition: box-shadow 0.5s;
+}
+
+#articles .card-title {
+  font-size: medium;
+}
+
+#articles .swiper-container {
+  padding: 50px 0px;
+}
+
+#articles .swiper-container .swiper-button-next {
+  background-image: url(../img/arrow.png);
+}
+
+#articles .swiper-container .swiper-button-prev {
+  background-image: url(../img/arrow.png);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#articles .container .card .like {
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(85, 85, 85, 0.678);
+  color: white;
+  font-size: 22px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+#articles .container .card .like {
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(85, 85, 85, 0.678);
+  color: white;
+  font-size: 22px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+#articles {
+  padding: 50px;
+}
+
+.card-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+#articles .container .card .like:hover {
+  background-color: darkred;
+}
+
+#articles .container .card h4 {
+  color: darkred;
+}
+
+#articles .container .card p {
+  color: rgb(51, 58, 65);
+  margin-bottom: 25px;
+}
+
+#articles .card .card-btn {
+  padding: 5px 40px 5px 40px;
+  border-radius: 5px;
+  border-color: rgb(51, 58, 65);
+  color: white;
+  background-color: rgb(51, 58, 65);
+}
+
+#articles .card .card-btn:hover {
+  color: darkorange;
+  transition: color 0.5s;
+}
+
+#articles .card .btn-cont {
+  text-align: center;
+}
